@@ -8,6 +8,7 @@ const test = {
 const second = {
     ...test,
     d: 4,
+    e: 5
 }
 
 const Recipes = () => {
@@ -19,7 +20,7 @@ const Recipes = () => {
 
     return (
         <div>
-            <h3>Current Recipe:</h3>
+            <h3>Current Recipes:</h3>
             <button onClick={() => handleClick(test)}>First List</button>
             <button onClick={() => handleClick(second)}>Second List</button>
 

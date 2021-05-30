@@ -9,7 +9,7 @@ const App = () => {
             <section className="hero"></section>
             <main>
                 <section>
-                    <h1>React - App.jsx</h1>
+                    <h1>React - App</h1>
                 </section>
             </main>
             <img src={sword} alt="sword" width="250" />
