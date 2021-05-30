@@ -1,14 +1,4 @@
-import './styles/index.scss';
-const test = {
-    a: 1,
-    b: 2,
-    c: 3
-};
+import {render} from 'react-dom';
+import App from './components/App';
 
-const second = {
-    ...test,
-    d: 4,
-}
-
-console.log(test);
-console.log(second);
+render(<App />, document.getElementById("root"));
