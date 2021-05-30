@@ -1,10 +1,13 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-let mode = "development"
+let mode = "development";
+let target = "web"; // this to fix a webpack bug, where if we change anything in css doesn't auto reflect(HMR) in browser.
 if(process.env.NODE_ENV === "production") {
     mode = "production";
+    target = "browserslist";
 }
 module.exports = {
     mode: mode,
+    target: target,
 
     module: {
         rules:[ 
